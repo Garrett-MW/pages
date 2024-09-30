@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <title>Office Pro</title>
+</head>
+
+<body>
+    <header>
+        <h1>Office Pro</h1>
+        <nav>
+            <ul>
+                <li><a href="products.html" class="button">Products</a></li>
+                <li class="nav-item">
+                    <!-- Placeholder for dropdown or additional nav items -->
+                </li>
+                <li><a href="checkout.html" class="button">Checkout</a></li>
+                <li><a href="order.html" class="button">Order</a></li>
+            </ul>
+        </nav>
+
+        <!-- Search Form -->
+        <form id="search-form" action="search_results.html" method="get" aria-label="Search for office products">
+            <input type="search" id="search-query" name="query" placeholder="Search products..." aria-label="Search products" required>
+            <button type="submit" class="button">Search</button>
+        </form>
+    </header>
+
+    <section class="office-supplies">
+        <h2>Cart Summary</h2>
+        <img src="images/supplies.jpg" alt="Office Supplies" class="supplies-image">
+    </section>
+
+    <main>
+        <div class="container">
+            <div class="checkoutLayout">
+                <div class="returnCart">
+                    <a href="products.html" class="button">Continue Shopping</a>
+                </div>
+
+                <h1>Cart Summary</h1>
+
+                <!-- Clear Cart Button -->
+                
+
+                <div class="list" id="cart-items">
+                    <div class="cart-item">
+                        <div class="item-name">Product 1</div>
+                        <div class="item-quantity">
+                            <button class="quantity-button" data-action="decrease">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1" aria-label="Quantity">
+                            <button class="quantity-button" data-action="increase">+</button>
+                        </div>
+                        <div class="item-price">$0</div>
+                        <button class="remove-button" aria-label="Remove item">Remove</button>
+                    </div>
+                    <!-- Add more cart items as needed -->
+                </div>
+
+                <div class="right">
+                    <h1>Checkout</h1>
+                    <form class="form" aria-label="Checkout form">
+                        <div class="group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" name="full-name" id="full-name" aria-required="true" required>
+                        </div>
+                        <div class="group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="1234567890" aria-required="true" required>
+                        </div>
+                        <div class="group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="name@example.com" aria-required="true" required>
+                        </div>
+                        <div class="group">
+                            <label for="address">Address</label>
+                            <input type="text" name="address" id="address" placeholder="Street Address" aria-required="true" required>
+                        </div>
+                        <div class="group">
+                            <label for="county">County</label>
+                            <select name="county" id="county" aria-required="true" required>
+                                <option value="">Select County</option>
+                                <option value="county1">County 1</option>
+                                <option value="county2">County 2</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="buttonCheckout">Submit</button>
+                    </form>
+
+                    <div class="return">
+                        <div class="row">
+                            <div>Total Quantity</div>
+                            <div class="totalQuantity">1</div>
+                        </div>
+                        <div class="row">
+                            <div>Total Price</div>
+                            <div class="totalPrice">$50</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Office Pro. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

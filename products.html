@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html></html>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="products.html" class="logo"></a>
+        <h1>Office Pro</h1>
+        <nav>
+            <ul>
+                <li><a href="products.html" class="button">Products</a></li>
+                <li class="nav-item"></li> 
+                <li><a href="checkout.html" class="button">Checkout</a></li>
+                <li><a href="order.html" class="button">Order</a></li>
+            </ul>
+        </nav>
+        <!-- Search Form -->
+        <form id="search-form" action="search_results.html" method="get">
+            <input type="text" id="search-query" name="query" placeholder="Search products...">
+            <button type="submit" class="button">Search</button>
+        </form>
+    </header>
+
+    <section class="office-supplies">
+        <h2>Office Supplies</h2>
+        <img src="images/supplies.jpg" alt="Office Supplies" class="supplies-image">
+    </section>
+
+    <main>
+        <article class="product">
+            <img src="images/caculater.jpg" alt="Calculator" class="product-image">
+            <h2 class="product-name">Calculator</h2>
+            <p class="product-price">$12.00</p>
+            <div class="cart-controls">
+                <input type="number" class="quantity" min="1" value="1">
+                <button class="add-to-cart">
+                    <img src="images/cart.jpg" alt="Add to Cart">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="product">
+            <img src="images/computer.jpg" alt="Desk Computer" class="product-image">
+            <h2 class="product-name">Computer</h2>
+            <p class="product-price">$450.00</p>
+            <div class="cart-controls">
+                <input type="number" class="quantity" min="1" value="1">
+                <button class="add-to-cart">
+                    <img src="images/cart.jpg" alt="Add to Cart">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="product">
+            <img src="images/laptop.jpg" alt="Laptop" class="product-image">
+            <h2 class="product-name">Laptop</h2>
+            <p class="product-price">$800.00</p>
+            <div class="cart-controls">
+                <input type="number" class="quantity" min="1" value="1">
+                <button class="add-to-cart">
+                    <img src="images/cart.jpg" alt="Add to Cart">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="product">
+            <img src="images/paper.jpeg" alt="Paper" class="product-image">
+            <h2 class="product-name">Paper</h2>
+            <p class="product-price">$2.34</p>
+            <div class="cart-controls">
+                <input type="number" class="quantity" min="1" value="1">
+                <button class="add-to-cart">
+                    <img src="images/cart.jpg" alt="Add to Cart">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="product">
+            <img src="images/sharpies.jpg" alt="Sharpies" class="product-image">
+            <h2 class="product-name">Sharpies</h2>
+            <p class="product-price">$11.50</p>
+            <div class="cart-controls">
+                <input type="number" class="quantity" min="1" value="1">
+                <button class="add-to-cart">
+                    <img src="images/cart.jpg" alt="Add to Cart">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="product">
+            <img src="images/sticknotes.jpg" alt="Sticky Notes" class="product-image">
+            <h2 class="product-name">Post-it Notes</h2>
+            <p class="product-price">$13.50</p>
+            <div class="cart-controls">
+                <input type="number" class="quantity" min="1" value="1">
+                <button class="add-to-cart">
+                    <img src="images/cart.jpg" alt="Add to Cart">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="product">
+            <img src="images/tape.jpg" alt="Tape" class="product-image">
+            <h2 class="product-name">Tape</h2>
+            <p class="product-price">$3.50</p>
+            <div class="cart-controls">
+                <input type="number" class="quantity" min="1" value="1">
+                <button class="add-to-cart">
+                    <img src="images/cart.jpg" alt="Add to Cart">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="product" data-name="Calculator" data-price="12.00">
+            <img src="images/caculater.jpg" alt="Calculator" class="product-image">
+            <h2 class="product-name">Calculator</h2>
+            <p class="product-price">$12.00</p>
+            <div class="cart-controls">
+                <input type="number" class="quantity" min="1" value="1">
+                <button class="add-to-cart">
+                    <img src="images/cart.jpg" alt="Add to Cart">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Office Pro. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html> lang="en">
+

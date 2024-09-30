@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Welcome to Office Pro</title>
+    <style>
+        *{
+             font-family: "Teko", 'san-serif';
+        }
+        body {
+            text-align: center;
+            background-color: #8F7A6E;
+        }
+
+         #coName {
+            font-size: 70px;
+            color: #A41F13;
+        }
+
+        #coNameDiv {
+            width: 70%;
+            margin: auto;
+            background-color: #E0D8D8;
+            box-shadow: 5px 5px 5px #292F36;
+            border-radius: 15px;
+
+        }
+
+        #mainDiv{
+            margin: auto;
+            width: 80%;
+            background-color: #FAF5F1;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px grey;
+        }
+
+        #container{
+            margin: auto;
+            width: 80%;
+            background-color: #E0D8D8;
+            padding: 2%;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px #292F36;
+        }
+
+        h3 {
+            font-size: 45px;
+            color: #292F36;
+        }
+
+        button{
+            height: 45px;
+            width: 50%;
+            border-radius: 15px;
+            margin: 2%;
+            padding: 1%;
+            background-color: #A41F13;
+            color: #FAF5F1;
+            font-size: 25px;
+        }
+
+        button:hover{
+            background-color: #b45b53;
+            transform: translateY(5px);
+        }
+
+        button:active{
+            background-color: black;
+            color: white;
+        }
+
+        @media screen and (max-width: 750px){
+            
+            #coName{
+                font-size:60px;
+            }
+
+            h3{
+                font-size: 35px;
+            }
+
+            button{
+                height: 40px;
+                width: 40%;
+                font-size: 15px;
+                transform: translateY(2px);
+            }
+        }
+
+        @media screen and (max-width: 592px){
+            #coName{
+                font-size:50px;
+            }
+            h3{
+                font-size: 25px;
+            }
+            button{
+                font-size: 12px;
+                height: 30px;
+                width: 35%;
+                border-radius: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="coNameDiv">
+        <h1 id="coName">Office Pro</h1>
+    </div>
+    <div id="container">
+        <h3>Make a selection</h3>
+        <div id="mainDiv">
+            <a href="CustomerLogin.html"><button>Customer Login</button></a>
+            <a href="EmployeeLogin.html"><button>Employee Login</button></a>
+            <a href="CreateAccount.html"><button>Create Account</button></a>
+            <a href="home.html"><button >Continue without Account</button></a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Office Pro. All rights reserved.</p>
+    </footer>
+</body>
+</html>

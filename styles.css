@@ -1,0 +1,342 @@
+/* Basic reset for list styling */
+body, h1, h2, p, ul, li, table, th, td, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: "Teko", 'san-serif';
+}
+
+body {
+    font-family: 'Poppins', serif;
+    line-height: 1.6;
+    background-color: #faf5f1;
+    color: #495057;
+}
+
+header {
+    background-color: #A41F13; /* Deep Red */
+    color: #fff;
+    padding: 20px;
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Distribute space between items */
+}
+
+header h1 {
+    margin: 0; 
+    padding: 0; 
+    flex: 1; 
+    text-align: left; /* Align text to the left */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display nav items in a row */
+    align-items: center; /* Center items vertically */
+}
+
+nav ul li {
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+/* Dropdown container styling */
+.nav-item {
+    position: relative; /* So the dropdown is positioned relative to the nav item */
+}
+
+/* Hide the dropdown by default */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position it directly below the button */
+    left: 0;
+    background-color: #f9f9f9; /* Background for the dropdown */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    padding: 10px;
+    z-index: 10;
+}
+
+/* Style for each dropdown item */
+.dropdown-item {
+    display: block;
+    padding: 10px 15px;
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.dropdown-item:hover {
+    background-color: #ddd; /* Background on hover */
+}
+
+/* Show the dropdown when hovering over the .nav-item */
+.nav-item:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Optional: Adjust button hover effects */
+a.button:hover, button:hover {
+    background-color: #002466; /* Dark Blue on hover */
+    transform: translateY(5px);
+}
+
+/* Style for navigation links to look like buttons */
+a.button, button {
+    display: inline-block;
+    background-color: #292F36; /* Dark Grey */
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+    border: none; /* Remove default button border */
+    cursor: pointer;
+    box-shadow: 0px 5px 15px black;
+}
+
+
+a:focus, button:focus {
+    outline: 2px solid #ffd700; /* Visible outline for accessibility */
+    outline-offset: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+}
+
+/* Style for individual product items */
+.product {
+    flex: 1 1 calc(25% - 20px); /* Adjust width and spacing */
+    box-sizing: border-box; /* Include padding and border in width/height */
+    text-align: center; /* Center text and images */
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9;
+    box-shadow: 0px 5px 15px grey;
+}
+
+.product-image {
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below images */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+/* Style for the "Add to Cart" button and quantity input */
+.cart-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between quantity input and button */
+    margin-top: 10px;
+}
+
+.quantity {
+    width: 60px; /* Set width for the quantity input */
+    padding: 5px;
+    text-align: center;
+}
+
+.add-to-cart {
+    background-color: #0e0429; /* Dark Blue */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart img {
+    width: 20px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 8px; /* Space between image and text */
+}
+
+.add-to-cart:hover {
+    background-color: #200961; /* Darker blue on hover */
+}
+
+/* Office Supplies Section */
+.office-supplies {
+    position: relative; /* Allow absolute positioning for the image */
+    width: 100%; /* Make the section span across the full screen */
+    height: 300px; /* Adjust the height as necessary */
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    background-color: #f1f1f1; /* Optional: background color in case image fails to load */
+}
+
+.office-supplies h2 {
+    position: relative; /* Keep the text above the image */
+    z-index: 2; /* Ensure the text appears above the image */
+    color: white; /* Set text color to white for contrast */
+    font-size: 48px; /* Adjust the font size as needed */
+    text-align: center; /* Center the text */
+    margin: 0;
+}
+
+.supplies-image {
+    position: absolute; /* Position the image behind the text */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the image fill the section */
+    height: 100%; /* Make the image fill the section */
+    object-fit: cover; /* Ensure the image covers the entire section without distortion */
+    z-index: 1; /* Ensure the image is behind the text */
+}
+
+/* Page Checkout */
+.checkoutContainer {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    height: 100vh;  /* Set the height to full viewport */
+    padding: 20px;  /* Optional padding */
+}
+
+
+
+/*background*/
+.checkoutLayout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 30px;  /* Increase padding */
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);  
+    min-width: 900px; /* Set a minimum width for the checkout box */
+    max-width: 1200px; /* Set a maximum width if needed */
+    width: 100%; /* Ensure it takes up full available width */
+}
+
+/* Adjust the background color of the right side */
+.checkoutLayout .right {
+    background-color: #92221a; /* Adjust background color */
+    border-radius: 20px;
+    padding: 40px;
+    color: #ffffff;
+}
+
+/* Style for the list images */
+.checkoutLayout .list img {
+    height: 80px;
+}
+
+/* Form styling */
+.checkoutLayout .right .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid #fdfdfd;
+    padding-bottom: 30px;
+}
+
+.checkoutLayout .form .group:nth-child(-n+3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.checkoutLayout .form input,
+.checkoutLayout .form select {
+    width: 100%;
+    padding: 12px 20px; /* Increase padding */
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: #f3f3f3;
+    color: #333; /* Change text color for better readability */
+}
+
+/* Row styling */
+.checkoutLayout .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.checkoutLayout .row div:nth-child(2) {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/* Checkout button styling */
+.buttonCheckout {
+    width: 100%;
+    height: 50px; /* Increase height */
+    border: none;
+    border-radius: 20px;
+}
+
+.remove-button {
+    background-color: #ff4c4c; /* Red color for emphasis */
+    color: white;
+    border: none;
+    border-radius: 3px; /* Rounded corners */
+    padding: 5px 10px; /* Padding around the text */
+    cursor: pointer;
+    font-size: 12px; /* Smaller font size */
+    margin-left: 10px; /* Space between the button and other elements */
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #e63d3d; /* Slightly darker red on hover */
+}
+.order-summary, .shipping-info {
+    margin-bottom: 20px;
+}
+
+.order-summary h4 {
+    margin-top: 10px;
+}
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

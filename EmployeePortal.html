@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <title>Employee Portal</title>
+    <style>
+        * {
+            font-family: "Teko", 'san-serif';
+        }
+    
+        body {
+            text-align: center;
+            background-color: #8F7A6E;
+        }
+    
+        #coName {
+            font-size: 70px;
+            color: #A41F13;
+        }
+    
+        #coNameDiv {
+            width: 70%;
+            margin: auto;
+            background-color: #E0D8D8;
+            box-shadow: 5px 5px 5px #292F36;
+            border-radius: 15px;
+    
+        }
+    
+        #mainDiv {
+            width: 80%;
+            background-color: #FAF5F1;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px grey;
+            margin: auto;
+        }
+    
+        #container {
+            width: 80%;
+            background-color: #E0D8D8;
+            padding: 2%;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px #292F36;
+            margin: auto;
+        }
+    
+        h3 {
+            font-size: 45px;
+            color: #292F36;
+        }
+
+         button{
+            height: 100%;
+            width: 50%;
+            border-radius: 15px;
+            margin: 2%;
+            padding: 1%;
+            background-color: #A41F13;
+            color: #FAF5F1;
+            font-size: 25px;
+        }
+
+        button:hover{
+            background-color: #b45b53;
+            transform: translateY(10px);
+        }
+
+        button:active{
+            background-color: black;
+            color: white;
+        }
+
+
+          @media screen and (max-width: 870px){
+            #coName {
+                font-size: 40px;
+            }
+    
+            #mainDiv {
+               width:70%;
+            }
+    
+            h3 {
+                font-size: 30px;
+            }
+
+             button{
+                width: 60%;
+                height: 30%;
+                font-size: 20px;
+             }
+             button:hover{
+                transform: translateY(5px);
+             }
+          }
+
+          @media screen and (max-width: 650px){
+    
+            h3 {
+                font-size: 25px;
+            }
+             button{
+                width: 50%;
+                height: 35px;
+                font-size: 15px;
+             }
+             button:hover{
+                transform: translateY(5px);
+             }
+          }
+
+    </style>
+</head>
+<body>
+    <div id="coNameDiv">
+        <h1 id="coName">Office Pro</h1>
+    </div>
+    <div id="container">
+        <h3>Make a selection</h3>
+        <div id="mainDiv">
+            <a href="OpenOrders.jsp"><button>View Open Orders</button></a>
+            <a href="login.html"><button>Logout</button></a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Office Pro. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <title>Employee Login</title>
+    <style>
+         *{
+            font-family: "Teko",'san-serif';
+        }
+
+        body{
+            text-align: center;
+            background-color: #8F7A6E;
+        }
+
+        form{
+            background-color: #E0D8D8;
+            width: 80%;
+            margin: auto;
+            padding: 2%;
+            border-radius: 15px;
+            box-shadow: 10px 5px 5px #292F36;
+        }
+
+        #coName{
+            font-size: 70px;
+            color: #A41F13;
+        }
+
+        #coNameDiv{
+            width: 70%;
+            margin: auto;
+            background-color: #E0D8D8;
+            box-shadow: 5px 5px 5px #292F36;
+            border-radius: 15px;
+
+        }
+
+
+        h1{
+            font-size: 55px;
+            color: #292F36;
+            padding-top: 20px;
+        }
+
+        #div1 h1{
+            font-size: 40px;
+        }
+
+        h3{
+            font-size: 25px;
+            color: #292F36;
+        }
+
+        #login{
+            height: 8%;
+            width: 20%;
+            border-radius: 15px;
+            margin: 2%;
+            background-color: #A41F13;
+            color: #FAF5F1;
+            font-size: 25px;
+        }
+
+        #login:hover{
+            background-color: #b45b53;
+            transform: translateY(5px);
+        }
+
+        #login:active{
+            background-color: black;
+            color: white;
+        }
+
+        input{
+            height: 25px;
+            width: 35%;
+            border-radius: 15px;
+            font-size: 20px;
+        }
+
+        input:focus{
+            border: 2px solid #A41F13;
+        }
+
+        #div1{
+            background-color: #FAF5F1;
+            width: 70%;
+            border-radius: 15px;
+            margin: auto;
+            text-align: center;
+            box-shadow: 5px 5px 5px grey;
+        }
+
+        #div2{
+            background-color: #FAF5F1;
+            width: 90%;
+            border-radius: 15px;
+            margin: auto;
+            box-shadow: 5px 5px 5px grey;
+        }
+
+        #user{
+            padding-top: 8%;
+        }
+
+       
+
+        @media screen and (max-width: 870px){
+            
+             form{
+               display: flex;
+             }
+
+            #coName{
+                font-size: 50px;
+            }
+
+
+            #div1{
+                height: 18%;
+                width: 100%;
+             }
+
+            #div2{
+               margin: 0% 2%;
+            }
+
+            h1{
+                font-size: 35px;
+                padding-top: 20px;
+            }
+
+            h3{
+                font-size: 25px;
+            }
+
+            input{
+                height: 30px;
+                width: 70%;
+            }
+
+            #login{
+                height: 30px;
+                width: 40%;
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (max-width: 670px){
+           #div1 h1{
+            font-size: 30px;
+           }
+
+            h3{
+               font-size: 20px;
+            }
+            
+            input{
+                height: 20px;
+            }
+            #login{
+                height: 25px;
+                width: 35%;
+            }
+            #login:hover{
+                transform: translateY(2px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="coNameDiv">
+        <h1 id="coName">Office Pro</h1>
+    </div>
+    <form action="servletName" method="post"> <!--Add servlet-->
+        <div id="div1">
+            <h1>Employee Login</h1>
+        </div>
+        <div id="div2">
+            <h3 id="empID">Employee ID:</h3>
+                <input type="text" name="empID" id="empID#">
+            <h3>Password:</h3>
+                <input type="text" name="password" id="password">
+            <br>
+            <button id="login">Log In</button>
+        </div>
+    </form>
+    <footer>
+        <p>&copy; 2024 Office Pro. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
