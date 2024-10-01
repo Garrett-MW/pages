@@ -43,21 +43,24 @@ nav ul li {
 }
 
 nav ul li:hover {
-    color: #ffd700; /* Change color on hover */
+    transform: translateY(2px);
 }
 
 
-
-
+.button{
+    border: 1px solid grey;
+    box-shadow: 2px 1px 2px black;
+}
 
 
 a.button:hover, button:hover {
-    background-color: #002466; /* Dark Blue on hover */
+    background-color: #ab554e;
+    transform: translateY(2px); /* light red  on hover  and moves slightly down*/
 }
 
 
 a.button, button {
-    background-color: rgb(198, 101, 36); 
+    background-color: #92221a;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -123,10 +126,13 @@ main {
     width: 60px; /* Set width for the quantity input */
     padding: 5px;
     text-align: center;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 5px lightgray;
+    border-radius: 8px;
 }
 
 .add-to-cart {
-    background-color: #0e0429; /* Dark Blue */
+    background-color: #92221a; /* Dark red */
     border: none;
     color: white;
     padding: 10px;
@@ -136,6 +142,8 @@ main {
     align-items: center;
     border-radius: 5px;
     cursor: pointer;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 5px lightgray;
 }
 
 .add-to-cart img {
@@ -145,7 +153,8 @@ main {
 }
 
 .add-to-cart:hover {
-    background-color: #200961; /* Darker blue on hover */
+    background-color: #ab554e;
+    transform: translateY(2px); /* lighter red on hover */
 }
 
 /* Office Supplies Section */
@@ -276,7 +285,8 @@ main {
 }
 
 .remove-button:hover {
-    background-color: #e63d3d; /* Slightly darker red on hover */
+    background-color: #ab554e;
+    transform: translateY(2px); /* Slightly darker red on hover */
 }
 .order-summary, .shipping-info {
     margin-bottom: 20px;
