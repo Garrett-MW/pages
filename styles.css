@@ -47,12 +47,6 @@ nav ul li:hover {
 }
 
 
-.button{
-    border: 1px solid grey;
-    box-shadow: 2px 1px 2px black;
-}
-
-
 a.button:hover, button:hover {
     background-color: #ab554e;
     transform: translateY(2px); /* light red  on hover  and moves slightly down*/
@@ -65,6 +59,19 @@ a.button, button {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    border: 1px solid #821e16e9;
+    box-shadow: 2px 1px 2px black;
+}
+
+#buttonCheckout{
+    background-color: #ab554e;
+    transition: background-color 0.3s ease;
+    transform: translateY(2px);
+}
+
+#buttonCheckout:hover{
+    background-color: #ae8885;
+
 }
 
 a:focus, button:focus {
